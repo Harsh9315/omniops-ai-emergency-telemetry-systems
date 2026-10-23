@@ -1,80 +1,70 @@
-# omniops-ai-emergency-telemetry-systems
-OmniOps AI is a real-time emergency telemetry platform featuring an SOS citizen app, a Java Spring Boot backend with WebSockets, and an interactive Leaflet map dashboard that automates instant nearest-hospital routing to minimize critical medical response delays.
+# Getting Started with Create React App
 
-# 🚨 OmniOps AI: Multi-Channel Emergency Detection & Smart Hospital Routing System
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![Java Version](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)](https://spring.io/projects/spring-boot)
-[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue.svg)](https://www.postgresql.org/)
-[![React.js](https://img.shields.io/badge/Frontend-React.js-blueviolet.svg)](https://reactjs.org/)
+## Available Scripts
 
-**OmniOps AI** is a production-grade, real-time emergency telemetry and smart routing web application designed to combat "Golden Hour" delays in emergency medical services (EMS). The system bridges the gap between distress signals and rapid hospital allocation using modern web technologies, spatial routing algorithms, and event-driven architectures.
+In the project directory, you can run:
 
----
+### `npm start`
 
-## ✨ Key Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-1. **Zero-Input Citizen PWA:** One-tap panic SOS button capturing precise HTML5 Geolocation coordinates (`Latitude & Longitude`) instantly without requiring app store installations.
-2. **Enterprise Spring Boot Backend:** Multithreaded, secure, low-latency event ingestion pipeline with automated severity triage and unique tracking IDs.
-3. **OSRM Spatial Routing Engine:** Dynamic shortest-path calculation mapping accident locations to the nearest medical facility, generating real-time distance metrics and precise ETA.
-4. **Interactive Command Center:** Unified dashboard built with Leaflet.js featuring real-time red incident markers, route green-corridor visualization, and live ambulance fleet animation.
-5. **Municipal Analytics & CSV Exporter:** Comprehensive event data logging with a single-click CSV report generator for urban safety and accident hotspot analysis.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
+### `npm test`
 
-## 🛠️ Tech Stack
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-* **Frontend & UI:** Progressive Web App (PWA), HTML5, CSS3, React.js
-* **Backend:** Java 17, Spring Boot (`Spring Web`, `Spring WebSockets / STOMP`, `Spring Data JPA`)
-* **Mapping & Visualization:** Leaflet.js Interactive Maps (Route Rendering & Fleet Animation Engine)
-* **Routing & Spatial Algorithms:** OSRM (Open Source Routing Machine) Spatial Graph Routing
-* **Database:** PostgreSQL (Relational Database with Spatial Indexing Support)
-* **Telemetry & Protocols:** Real-time JSON Payloads, WebSocket Event-Driven Pipeline, Dynamic CSV Exporter
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 📂 Project Directory Structure
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```text
-omniops-ai-emergency-telemetry-system/
-│
-🚀 Getting Started Locally
-Prerequisites
-Java 17 or higher installed
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Node.js & npm installed
+### `npm run eject`
 
-PostgreSQL installed and running
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-1. Backend Setup (Spring Boot)
-Navigate to the backend directory:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Bash
-cd backend
-Configure your PostgreSQL database credentials in src/main/resources/application.properties:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/omniops_db
-spring.datasource.username=postgres
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
-Run the Spring Boot application:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Bash
-mvn spring-boot:run
-2. Frontend Setup (React.js)
-Navigate to the frontend directory:
+## Learn More
 
-Bash
-cd frontend
-Install dependencies:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Bash
-npm install
-Start the development server:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Bash
-npm run start
-├── backend/               # Java Spring Boot Application (REST APIs, WebSockets, DB Models)
-├── frontend/              # Progressive Web App & Command Center Dashboard (React / Leaflet)
-└── README.md              # Project Documentation
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
